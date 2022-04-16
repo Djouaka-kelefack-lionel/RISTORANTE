@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="it">
 
 <head>
 
@@ -10,42 +10,97 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
 
-    <title>Restorant</title>
+    <title>CerCamera</title>
 </head>
 
 <body>
     <header>
-        <a href=" # " class="logo"><span>R</span>estorant</a>
+        <a href=" # " class="logo"><span>Cer</span>Camera</a>
 
         <ul class="navbar ">
 
             <li>
-                <a href="# "> Accueil</a>
+                <a href="# "> Home</a>
             </li>
             <li>
-                <a href="# ">A propos</a>
+                <a href="# ">Inserisci anuncio</a>
             </li>
             <li>
                 <Restorantle caviar>
-                    <a href="# ">Expert</a>
+                    <a href="# ">Servizi</a>
             </li>
             <li>
-                <a href="# ">Temoignage</a>
+                <a href="# ">Descrizione</a>
             </li>
             <li>
-                <a href="# ">Contact</a>
+                <a href="# ">Contatti</a>
             </li>
-            <a href="# " class="btn-reserve ">Reservation</a>
+            <a href="# " class="btn-registrati ">Registratti</a>
+            <li>
+                <a href="# " class="btn-accedi ">Accedi</a>
+            </li>
         </ul>
     </header>
 
-    <section class="banniere" id="banniere">
-        <div class="contenu">
-            <h2>Que des plats delicieux</h2>
-            <p>Si vous souhaitez manger sainement , un seul expace « Restorant le caviar »
-            </p>
-            <a href=" # " class="btn1">Notre Menu</a>
-            <a href="# " class="btn2">Reservation</a>
+
+
+    <section class="filtri" id="filtri">
+        <div class="homeWhiteText">
+            <!-- INIZIO SPOT GOLIA DIFFERENZIATO WEB MOBILE DEFAULT HOME -->
+            <div class="homeWrapLeftGolia">
+                <div class="divIntestazione ">
+                    <div class="intestazioneText ">
+                        <span>
+                            Cerca casa
+                        </span>
+                    </div>
+                </div>
+                <div class="divRicerca ">
+
+                        <div class="homeCercaBar ">
+                            <input type="text" id="searchTextFieldNew6" class="homeRicercaInput" placeholder="Cerchi casa a..." onkeyup="onKeyUp(event, '2');" autocomplete="off">
+                            <ul class="autocompleteGoogle" id="searchBoxContainerGoogle6" ></ul>
+                            <ul class="autocompleteGoogle" id="searchBoxContainerGoogleMobile6"></ul>
+
+                            <select id="selectTipo6" name="ricercaSelectTipo" class="homeRicercaSelect ">
+                                            <option value="1" selected="">
+                                                Vendita
+                                            </option>
+                                            <option value="2">
+                                                Affitto
+                                            </option>
+
+                            </select>
+                            <div class="newStyle "></div>
+                            <div class="homeButtonType ">
+                                            <div class="homeTipoAnnuncioButton " onclick="deselect(this);">
+                                                <input type="radio" class="ricercaCheckbox homeRadioButton" id="checkBoxTipo" value="1" name="ricercaCh" checked="">
+                                                <div class="homeCercaLabel" onclick="$(this).prev().click();">Vendita</div>
+                                            </div>
+                                            <div class="homeTipoAnnuncioButton " onclick="deselect(this);">
+                                                <input type="radio" class="ricercaCheckbox homeRadioButton" id="checkBoxTipo" value="2" name="ricercaCh">
+                                                <div class="homeCercaLabel" onclick="$(this).prev().click();">Affitto</div>
+                                            </div>
+
+                            </div>
+                            <div class="homeCercaButton" onclick="checkPlaceByName();">
+                                CERCA CASA
+                            </div>
+                            <div class="homeCercaButton hideWeb" onclick="checkPlaceByName(6);">
+                                CERCA CASA
+                            </div>
+                            <div class="msgCercaError"></div>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+                    </div>
+            
+                </div>
+            </div>
+            <!-- FINE AGGIUNTO SPOT GOLIA PER DIFFERENZIA WEB MOBILE (rimuovere hideresponsive, hideweb)-->
+            <!-- FINE SPOT GOLIA DIFFERENZIATO WEB MOBILE DEFAULT HOME -->
         </div>
     </section>
 

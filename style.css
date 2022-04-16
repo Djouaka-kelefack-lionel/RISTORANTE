@@ -7,7 +7,7 @@
 }
 
 p {
-    font-weight: 300;
+    font-weight: 400;
     color: #111;
 }
 
@@ -19,15 +19,16 @@ header {
     width: 100%;
     z-index: 1;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     transition: 0.5s;
+    background: indianred;
 }
 
 .logo {
     color: oldlace;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 4em;
     text-decoration: none;
 }
 
@@ -37,6 +38,7 @@ header {
 
 .navbar {
     display:flex;
+    position: relative;
 }
 
 .navbar li {
@@ -44,38 +46,91 @@ header {
 }
 
 .navbar a {
-    color: #fff;
+    color: rgb(231, 161, 161);
     text-decoration: none;
     margin-left: 30px;
     font-weight: 700;
+    font-size: 2em;
 }
 
-.btn-reserve {
+.btn-accedi {
     padding: 10px 20px;
-    background: aqua;
+    background: rgb(159, 190, 190);
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+.btn-accedi:hover {
+    background: #755a3c; 
+    transition: ease-out; 
+}
+.btn-registrati {
+    padding: 10px 20px;
+    background: rgb(167, 202, 202);
     margin-top: -10px;
     text-transform: uppercase;
 }
 
-.btn-reserve:hover {
-    background: #d87710;  
+.btn-registrati:hover {
+    background: #a8825a;  
+    transition: ease-out; 
 }
 
 header.navbar li a:hover {
+    color: #d87710;
     border-bottom: 2px solid #d87710;
     
 }
 
-.banniere {
+.filtri{
     position: relative;
     width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./images/bb.jpg);
     background-size: cover;
+    background-image: url(./images/home.jpg);
+    background-size: cover;
+
 }
+
+.divRicerca {
+    z-index: 2;
+}
+
+.autocompleteGoogle{
+    width: 38px;
+    margin-top: 360px;
+}
+
+.homeWrapLeftGolia{
+    width: 100%;
+    margin-top: 0;
+}
+
+.intestazioneText span{
+    margin-left: 0px;
+    text-shadow: none;
+    font-size: 100px;
+   
+}
+
+.divRicerca{
+    z-index: 6;
+}
+.homeCercaBar{
+    width: 380px;
+    margin-top: 5px;
+}
+
+.homeYellowCerca{
+    margin-top: 15px;
+}
+
+.homeRicercaInput{
+    margin-top: 20px;
+}
+
 
 .banniere.contenu {
     max-width: 70px;
